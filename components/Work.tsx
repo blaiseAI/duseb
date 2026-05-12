@@ -146,7 +146,7 @@ export default function Work() {
           <a
             href="https://sda-kinyarwanda-hymnal.vercel.app/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="serif"
             style={{
               marginTop: 28,
