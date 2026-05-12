@@ -17,13 +17,13 @@ export default function SectionMast({ num, label, title }: Props) {
         <div style={{ display: "flex", gap: 18, alignItems: "baseline" }}>
           <span
             className="serif"
-            style={{ fontSize: 36, fontStyle: "italic", color: "var(--color-rust)", fontWeight: 500, lineHeight: 1 }}
+            style={{ fontSize: 36, fontStyle: "italic", color: "var(--color-rust)", fontWeight: 500, lineHeight: 1, whiteSpace: "nowrap" }}
           >
             § {num}
           </span>
           <span className="mono">{label}</span>
         </div>
-        <span className="mono">A Chronicle · {label}</span>
+        <span className="mono mast-aside">A Chronicle · {label}</span>
       </div>
       <h2
         className="serif"

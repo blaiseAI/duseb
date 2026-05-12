@@ -37,9 +37,12 @@ export default function Work() {
         }}
       >
         <div>
-          <div style={{ display: "flex", gap: 14, alignItems: "baseline", marginBottom: 18 }}>
+          <div
+            className="folio-row"
+            style={{ display: "flex", gap: 14, alignItems: "baseline", marginBottom: 18 }}
+          >
             <span
-              className="serif"
+              className="serif folio-label"
               style={{ fontSize: 42, fontStyle: "italic", color: "var(--color-rust)", fontWeight: 500 }}
             >
               Folio 1
@@ -90,10 +93,10 @@ export default function Work() {
             </p>
           </div>
           <div
+            className="metrics-grid"
             style={{
               marginTop: 32,
               display: "grid",
-              gridTemplateColumns: "repeat(4,minmax(0,1fr))",
               gap: 0,
               borderTop: "1px solid var(--color-line)",
               borderBottom: "1px solid var(--color-line)",
@@ -266,8 +269,14 @@ export default function Work() {
           </span>
         </div>
         <div>
-          <div style={{ display: "flex", gap: 14, alignItems: "baseline", marginBottom: 18 }}>
-            <span className="serif" style={{ fontSize: 36, fontStyle: "italic", color: "#8E6238", fontWeight: 500 }}>
+          <div
+            className="folio-row"
+            style={{ display: "flex", gap: 14, alignItems: "baseline", marginBottom: 18 }}
+          >
+            <span
+              className="serif folio-label"
+              style={{ fontSize: 36, fontStyle: "italic", color: "#8E6238", fontWeight: 500 }}
+            >
               Folio 2
             </span>
             <span className="mono">In development · Multilingual library</span>
