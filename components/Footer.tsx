@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{ padding: "40px 48px", borderTop: "2px solid var(--color-ink)" }}>
+    <footer className="mobile-pad" style={{ padding: "40px 48px", borderTop: "2px solid var(--color-ink)" }}>
       <div
         style={{
           maxWidth: 1280,

@@ -22,7 +22,7 @@ const glwTags = ["Mobile App", "Multilingual", "In Development"];
 
 export default function Work() {
   return (
-    <section id="work" style={{ padding: "100px 48px", maxWidth: 1280, margin: "0 auto" }}>
+    <section id="work" className="mobile-pad" style={{ padding: "100px 48px", maxWidth: 1280, margin: "0 auto" }}>
       <SectionMast num="I" label="Selected Work" title="Things made, slowly, and on purpose." />
 
       {/* Flagship spread */}
@@ -93,10 +93,11 @@ export default function Work() {
             style={{
               marginTop: 32,
               display: "grid",
-              gridTemplateColumns: "repeat(4,1fr)",
+              gridTemplateColumns: "repeat(4,minmax(0,1fr))",
               gap: 0,
               borderTop: "1px solid var(--color-line)",
               borderBottom: "1px solid var(--color-line)",
+              overflow: "hidden",
             }}
           >
             {flagshipMetrics.map(([v, l], i) => (
@@ -186,7 +187,7 @@ export default function Work() {
           <div className="mono" style={{ position: "absolute", bottom: 24, right: 24 }}>
             Fig. 1.1 — Home screen
           </div>
-          <div style={{ position: "relative", width: 320, height: 420 }}>
+          <div style={{ position: "relative", width: 320, height: 420, overflow: "hidden" }}>
             <Phone tilt={-7} z={1} style={{ position: "absolute", left: 0, top: 10 }} />
             <Phone tilt={6} z={2} style={{ position: "absolute", left: 150, top: 0 }} />
           </div>

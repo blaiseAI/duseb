@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
-    <section id="top" style={{ padding: "140px 48px 80px", maxWidth: 1280, margin: "0 auto" }}>
+    <section id="top" className="mobile-pad" style={{ padding: "140px 48px 80px", maxWidth: 1280, margin: "0 auto" }}>
       <Reveal style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 60 }}>
         <span className="mono">Vol. I · A Chronicle of Work · Alberta, Canada</span>
         <span className="mono">Established 2019</span>

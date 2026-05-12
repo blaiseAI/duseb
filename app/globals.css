@@ -15,7 +15,7 @@
 }
 
 html { scroll-behavior: smooth; }
-body { font-family: var(--font-sans); }
+body { font-family: var(--font-sans); overflow-x: hidden; }
 ::selection { background: #C45A2F33; color: #1B1916; }
 
 .rule { height: 1px; background: var(--color-line); width: 100%; }
@@ -39,5 +39,6 @@ body { font-family: var(--font-sans); }
 
 @media (max-width: 720px) {
   .stack-on-mobile { grid-template-columns: 1fr !important; }
+  .stack-on-mobile > * { min-width: 0; }
   .mobile-pad { padding-left: 24px !important; padding-right: 24px !important; }
 }

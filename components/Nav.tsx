@@ -19,6 +19,7 @@ export default function Nav() {
       }}
     >
       <div
+        className="mobile-pad"
         style={{
           maxWidth: 1280,
           margin: "0 auto",
@@ -34,7 +35,7 @@ export default function Nav() {
           </span>
           <span className="mono">№ 01 · MMXXVI</span>
         </a>
-        <div style={{ display: "flex", gap: 32 }}>
+        <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
           {links.map(([n, l, h]) => (
             <a
               key={h}

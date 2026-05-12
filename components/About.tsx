@@ -13,6 +13,7 @@ export default function About() {
   return (
     <section
       id="about"
+      className="mobile-pad"
       style={{
         background: "var(--color-paper)",
         padding: "100px 48px",

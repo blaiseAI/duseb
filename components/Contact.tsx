@@ -73,7 +73,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ padding: "100px 48px", maxWidth: 1280, margin: "0 auto" }}>
+    <section id="contact" className="mobile-pad" style={{ padding: "100px 48px", maxWidth: 1280, margin: "0 auto" }}>
       <SectionMast num="III" label="Correspondence" title="Let us begin a correspondence." />
       <Reveal
         className="stack-on-mobile"
