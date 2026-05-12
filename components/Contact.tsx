@@ -45,6 +45,7 @@ export default function Contact() {
 
   const field = (k: keyof Fields, label: string, type: string = "text", multiline = false) => {
     const has = err[k];
+    const errId = `${k}-err`;
     return (
       <label style={{ display: "block" }}>
         <div className="mono" style={{ marginBottom: 4 }}>{label}</div>
@@ -54,6 +55,8 @@ export default function Contact() {
             onChange={(e) => setF({ ...f, [k]: e.target.value })}
             style={fieldStyle(!!has, true)}
             rows={4}
+            aria-invalid={!!has}
+            aria-describedby={has ? errId : undefined}
           />
         ) : (
           <input
@@ -61,10 +64,16 @@ export default function Contact() {
             value={f[k]}
             onChange={(e) => setF({ ...f, [k]: e.target.value })}
             style={fieldStyle(!!has, false)}
+            aria-invalid={!!has}
+            aria-describedby={has ? errId : undefined}
           />
         )}
         {has && (
-          <div style={{ fontSize: 11, color: "var(--color-rust)", marginTop: 4, fontFamily: "var(--font-mono)" }}>
+          <div
+            id={errId}
+            role="alert"
+            style={{ fontSize: 11, color: "var(--color-rust)", marginTop: 4, fontFamily: "var(--font-mono)" }}
+          >
             {has}
           </div>
         )}
