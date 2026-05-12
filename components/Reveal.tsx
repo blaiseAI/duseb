@@ -3,7 +3,7 @@
 import { useEffect, useRef, type ReactNode, type CSSProperties } from "react";
 
 type Props = {
-  children: ReactNode;
+  children?: ReactNode;
   as?: "div" | "section" | "article" | "header" | "footer";
   className?: string;
   style?: CSSProperties;
